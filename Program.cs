@@ -18,8 +18,14 @@ for (int i = 0; i < n; i++)
 // Instrucción: El alumno debe encontrar el valor máximo del arreglo 'numeros'
 int maximo = numeros[0]; 
 
-// TODO: Implementar el algoritmo de búsqueda aquí
-
+// Implementación optimizada del algoritmo de búsqueda
+for (int i = 1; i < n; i++)
+{
+    if (numeros[i] > maximo)
+    {
+        maximo = numeros[i];
+    }
+}
 
 // --- FIN DE LÓGICA DEL ALUMNO ---
 
